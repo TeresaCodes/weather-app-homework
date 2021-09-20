@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-main-view">
+        <div class="header">
+          <div class="row">
+            <div class="col-md-auto">
+              <h1 class="city-name" id="city-name">placeholder</h1>
+              <span id="weather-description">placeholder</span>
+            </div>
+            <div class="row">
+              <div class="col-md-auto">
+                <span id="current-time">xx, xx:xx</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col" id="weather-icon"></div>
+          <div class="col temperature-view">
+            <span class="temperature" id="temperature">xx</span>
+            <span class="units">
+              <sup
+                ><a href="#" rel="noopener noreferrer" id="unit-celsius">°C</a>
+                |
+                <a href="#" rel="noopener noreferrer" id="unit-fahrenheit"
+                  >°F</a
+                ></sup
+              >
+            </span>
+          </div>
+          <div class="col other-view">
+            Humidity: <span id="humidity">x</span>%
+            <br />
+            Wind: <span id="wind">x</span> Km/h
+          </div>
+        </div>
+      </div>
+      <div class="search-bar">
+        <form id="search" action="">
+          <input
+            type="text"
+            placeholder="Search City ..."
+            class="search-input"
+            autofocus
+          />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <button type="button" class="btn btn-info" id="get-location">
+          Get Location
+        </button>
+      </div>
+      <footer>
+        <a
+          href="https://github.com/TeresaCodes/weather-app-homework"
+          target="_blank"
+          rel="noreferrer"
+          >Open-source code</a
+        >
+        by <em>Teresa</em>
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
