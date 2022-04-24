@@ -66,7 +66,7 @@ function changePage(temp, humidity, wind, icon, cityName, weatherDesc, time) {
   document.querySelector("#wind").innerHTML = wind;
   document.querySelector(
     "#weather-icon"
-  ).innerHTML = `<img src='http://openweathermap.org/img/wn/${icon}@2x.png' id="icon" />`;
+  ).innerHTML = `<img src='https://openweathermap.org/img/wn/${icon}@2x.png' id="icon" />`;
 
   document.querySelector("#current-time").innerHTML =
     "Last updated: " + time[0] + ", " + time[1] + ":" + time[2];
@@ -94,7 +94,7 @@ function displayForecastData(response) {
       <div class="forecast-day">${formatDay(forecastDay.dt)[0]}</div>
       <div>
         <img
-          src="http://openweathermap.org/img/wn/${
+          src="https://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           id="icon"
