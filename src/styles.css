@@ -37,6 +37,14 @@ a {
   font-size: smaller;
 }
 
+#weather-icon {
+  padding: 0;
+}
+
+#icon {
+  filter: brightness(0.75);
+}
+
 .temperature {
   font-size: 5em;
 
@@ -55,6 +63,26 @@ a {
   position: relative;
   top: 10px;
   left: 10px;
+}
+
+.forecast {
+  text-align: center;
+  font-size: smaller;
+  padding: 0;
+}
+
+.forecast-child-0:hover,
+.forecast-child-1:hover,
+.forecast-child-2:hover,
+.forecast-child-3:hover,
+.forecast-child-4:hover,
+.forecast-child-5:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.forecast-day,
+.temperature-forecast-min {
+  opacity: 0.5;
 }
 
 .search-bar {

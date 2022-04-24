@@ -22,11 +22,15 @@
           <div class="row">
             <div class="col-md-auto">
               <h1 class="city-name" id="city-name">placeholder</h1>
-              <span id="weather-description">placeholder</span>
             </div>
             <div class="row">
               <div class="col-md-auto">
-                <span id="current-time">xx, xx:xx</span>
+                <span id="weather-description"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-auto">
+                <span id="current-time">Last updated:</span>
               </div>
             </div>
           </div>
@@ -49,10 +53,13 @@
           <div class="col other-view">
             Humidity: <span id="humidity">x</span>%
             <br />
-            Wind: <span id="wind">x</span> Km/h
+            Wind: <span id="wind">x</span> m/s
           </div>
         </div>
+
+        <div class="forecast" id="forecast"></div>
       </div>
+
       <div class="search-bar">
         <form id="search" action="">
           <input
