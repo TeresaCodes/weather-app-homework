@@ -29,7 +29,6 @@ function searchCity(event) {
 }
 
 function getCityData(response) {
-  console.log(response);
   let latitude = response.data.coord.lat;
   let longitude = response.data.coord.lon;
   let forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=${unit}`;
